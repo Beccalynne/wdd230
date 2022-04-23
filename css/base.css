@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    /*Star applies to all the page*/ 
+}
+
+header, footer {
+    background-color: lightgoldenrodyellow;
+}
+
+header, footer, main {
+    max-width: 36rem;
+    margin: 0 auto; /*centers everything on the page left-right*/  /*Adjusts outside of the border*/
+    padding: 2rem; /*Inside the border adjustments*/
+    border-radius: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+img {
+    box-shadow: 10px 5px 5px rgba(210,105,30, .3);
+    border-radius: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+#profile.pic {
+    width: 150px;
+    height: auto;
+}
+
+#special {
+    color: brown;
+}
