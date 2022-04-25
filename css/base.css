@@ -14,6 +14,7 @@ header, footer, main {
     margin: 0 auto; /*centers everything on the page left-right*/  /*Adjusts outside of the border*/
     padding: 2rem; /*Inside the border adjustments*/
     border-radius: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 header {
@@ -21,6 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
+    font-family: 'Playfair Display', serif;
 }
 
 img {
