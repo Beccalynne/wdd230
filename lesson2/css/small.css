@@ -1,0 +1,60 @@
+/* Normal CSS */
+/* 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 */
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+}
+header, h3, footer{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: slategrey;
+    font-family: 'Philosopher', sans-serif;
+    color: white;
+    text-align: center;
+    /* max-width: 100%; */
+}
+
+header, footer{
+    width: 100%;
+}
+
+h2{
+    margin: 0px;
+}
+section{
+    max-width: 100%;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border: 3px solid slategray;
+    background-color: rgb(211, 219, 228);
+}
+section img{
+    max-width: 300px;
+    padding-top: 1.5rem;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    margin: auto;
+}
+p, a{
+    font-family: 'Bree Serif', serif;;
+    /* padding-top: 1.5rem; */
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+}
+img{
+    width: 250px;
+    height: auto;
+}
