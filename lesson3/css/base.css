@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+	font-family: 'Oxygen', sans-serif;
+}
+h1, h2, h3, h4{
+	font-family: 'Source Serif Pro', serif;
+}
+
+p{
+	font-family: 'Oxygen', sans-serif;
+}
+
+img{
+	max-width: 500px;
+	height: auto;
+}
+/* Color Scheme Page */
+.colors{
+	display: flex;
+	flex-direction: row;
+}
+.color{
+	margin: 1em;
+	padding: auto;
+	border: 2em;
+}
+/* Typography Page */
+.heading{
+	font-family: 'Source Serif Pro', serif;
+	size: 7em;
+}
+.caption{
+	font-family: 'Bebas Neue', cursive;
+}
