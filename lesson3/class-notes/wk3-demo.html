@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wk3 Demo</title>
+
+    <style>
+        *{
+            margin: 0em;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer{
+            background-color: rgba(255, 157, 0, 0.808);
+        }
+
+        footer{
+            color: white;
+            margin: 1em;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .flex-nav ul{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            text-align: center;
+            color: white
+        }
+
+        /* Allows the nav to take up space they need and not need the media query */
+        /* .flex-nav li {
+            flex: 1 1 auto;
+        } */
+
+        .flex-main a{
+            display: block;
+            padding:  0.8em 1rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .flex-nav a:hover {
+            display: block;
+            background-color: yellow;
+            color: black;
+        }
+        .flex-main {
+            display: flex;
+            flex-direction: column;
+            margin: auto 3em;
+        }
+        .flex-main section{
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+
+
+        @media screen and (min-width: 46rem) {
+            .flex-nav ul{
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Flex Demo</h1>
+        <nav class="flex-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pg 1</a></li>
+                <li><a href="#">Pg 2</a></li>
+                <li><a href="#">Pg 3</a></li>
+                <li><a href="#">Pg 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-main">
+        <section>
+            <h2>Sample Section</h2>
+            <div><img src="https://picsum.photos/300/300?random=2" alt="A picture"></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus aut dignissimos, dolor libero facere perspiciatis soluta cupiditate possimus quidem consequuntur. Porro numquam iure consequuntur dolorem ad ducimus similique quis a!</p>
+        </section>
+        <section>
+            <h2>Sample Section</h2>
+            <div><img src="https://picsum.photos/300/300?random=2" alt="A picture"></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nostrum quod maxime ea repellendus. Quidem blanditiis laborum laboriosam architecto est. Dolorem provident laboriosam sint quia dicta? Illum sed fugit deleniti!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Becca Norman</p>
+    </footer>
+
+</body>
+</html>

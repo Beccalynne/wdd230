@@ -1,31 +1,61 @@
 * {
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+header, footer, main {
+    max-width: 36rem;
+    margin: 0 auto; 
+    padding: 2rem; 
+    border-radius: 15px;
+}
+header {
+    align-items: center;
+    flex-wrap: wrap;
+	background-color: rgba(186, 63, 29, 1);
+	color: rgb(217, 217, 217) !important;
+}
+header h1{
+	text-align: center;
+	color: rgb(217, 217, 217) !important;
+}
 
 nav{
     display: flex;
     flex-direction: column;
 	font-family: 'Oxygen', sans-serif;
 }
-h1, h2, h3, h4{
-	font-family: 'Source Serif Pro', serif;
+nav ul{
+	list-style-type: none;
 }
 
+h1, h2, h3, h4{
+	font-family: 'Source Serif Pro', serif;
+	color: #1F363D;
+}
+section{
+	margin: 1em auto;
+	padding: 1em;
+	background-color: rgba(64, 121, 140, .15);
+}
 p{
 	font-family: 'Oxygen', sans-serif;
+	color: #1F363D;
 }
 
 img{
 	max-width: 500px;
 	height: auto;
 }
+footer{
+	text-align: center;
+}
 /* Color Scheme Page */
 .colors{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 .color{
 	margin: 1em;
@@ -39,4 +69,27 @@ img{
 }
 .caption{
 	font-family: 'Bebas Neue', cursive;
+	color: #BA3F1D;
+}
+
+/* Target Audience */
+.persona{
+	max-width: 500px;
+}
+.persona img{
+	display: block;
+	margin: 1em auto;
+	padding: 1em;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Index Page */
+.logo{
+	max-width: 500px;
+}
+.logo img{
+	max-width: 100%;
+	height: auto;
+
 }

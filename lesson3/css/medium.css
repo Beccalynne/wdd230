@@ -1,6 +1,10 @@
-@media (min-width: 37.5em) {
-	nav {
+@media (min-width: 46rem) {
+
+	nav ul{
+		display: flex;
 		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 1em;
 	}
 	
 	nav a {
