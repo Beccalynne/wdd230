@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* don't need template rows because it will automatically do it, 
+    unless you want it in a specific area but can specify with class */
+    /* Order property, within the {}, 0 is top left so any negative would push to top left, 
+    1 would push it to bottom right */
+
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 36em;
+    text-align: center;
+}
+header h1{
+    max-width: 10em;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo{
+    max-width: 5em;
+    max-height: auto;
+}
+
+.spotlight{
+    /* can be a child for grid and a parent for a different grid or flex */
+    grid-column: 3/4;
+    grid-row: 1/4;
+    display: flex;
+}
+
+nav ul{
+	list-style-type: none;
+}
