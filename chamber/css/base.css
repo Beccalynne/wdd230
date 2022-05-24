@@ -1,30 +1,83 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header, footer, main {
+    max-width: 36rem;
+    margin: 0 auto; 
+    padding: 2rem; 
+    border-radius: 15px;
+	display: block;
+}
+header {
+	max-width: none;
+	padding: 0;
+    align-items: center;
+    flex-wrap: wrap;
+	background-color: rgba(186, 63, 29, 1);
+	color: rgb(217, 217, 217) !important;
+}
+header h1{
+	text-align: center;
+	color: rgb(217, 217, 217) !important;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 780px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+nav ul {
+	list-style-type: none;
+	/* overflow: hidden; */
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, yellow, transparent) top /
+		var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
+
+a:hover {
+	color: #1F363D;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Source Serif Pro', serif;
+	color: #1F363D;
+}
+section{
+	margin: 1em auto;
+	padding: 1em;
+    border-style: solid;
+    min-width: 15em;
+	background-color: rgba(64, 121, 140, .15);
+}
+p{
+	font-family: 'Oxygen', sans-serif;
+	color: #1F363D;
+}
+
+img{
+	max-width: 500px;
+	height: auto;
+}
+footer{
+	text-align: center;
+	background-color: rgba(186, 63, 29, 1);
+	padding-top: 0;
+	max-width: none;
 }
 
 main{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    /* don't need template rows because it will automatically do it, 
-    unless you want it in a specific area but can specify with class */
-    /* Order property, within the {}, 0 is top left so any negative would push to top left, 
-    1 would push it to bottom right */
-
-}
-
-header{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    min-width: 36em;
-    text-align: center;
-}
-header h1{
-    max-width: 10em;
-}
-
-nav{
+    max-width: 36em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -34,13 +87,13 @@ nav{
     max-height: auto;
 }
 
-.spotlight{
-    /* can be a child for grid and a parent for a different grid or flex */
-    grid-column: 3/4;
-    grid-row: 1/4;
-    display: flex;
+@media only screen and (max-width: 60em) {
+.spotlight3{
+	display: none;
 }
-
-nav ul{
-	list-style-type: none;
+}
+@media only screen and (max-width: 37.5em) {
+	.join{
+		display: none;
+	}
 }

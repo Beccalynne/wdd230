@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
@@ -21,7 +22,7 @@
         <img id="logo" src="/lesson3/images/logo1.png" alt="Logo">
         <h1>Pensacola Chamber of Commerce</h1>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
@@ -33,11 +34,52 @@
     </header>
     <!-- Grid inside of grid is fine, grid on in main to adjust the section placement -->
     <main>
-
+        <section class="hero">
+            <p>Hero with site name and call to action</p>
+        </section>
+        <div class="ev">
+            <section class="event">
+                <p>Event</p>
+            </section>
+            <section class="weather">
+                <p>Weather</p>
+            </section>
+        </div>
+        <section class="news_release">
+            <p>News Release</p>
+        </section>
+        <div class="spotlight">
+            <section class="spotlight1">
+                <p>Spotlight 1</p>
+            </section>
+            <section class="spotlight2">
+                <p>Spotlight 2</p>
+            </section>
+            <!-- Spotlight 3 will only be visable with the largest view -->
+            <section class="spotlight3">
+                <p>Spotlight 3</p>
+            </section>
+        </div>
+        <section class="join">
+            <p>Join</p>
+        </section>
     </main>
 
     <footer>
-
+        <img id="logo" src="/lesson3/images/logo1.png" alt="Logo">
+        <div class="address">
+            <h3>Pensacola Chamber of Commerce</h3>
+            <p>418 W. Garden St., 4th Floor</p>
+            <p>Pensacola, FL 32502</p>
+        </div>
+        <div class="contact">
+            <p>(850) 475-4999</p>
+            <p>support@pensacolachamber.com</p>
+        </div>
+        <div class="base">
+            <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
+            <p id="special"> Last Modified <span id="lastmod"></span></p>
+        </div>
     </footer>
     
 </body>
