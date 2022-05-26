@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5){
+@media only screen and (min-width: 35){
 	nav ul { display: flex; 
 		list-style-type: none;
 	}

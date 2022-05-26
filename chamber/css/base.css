@@ -87,12 +87,12 @@ main{
     max-height: auto;
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 64em) {
 .spotlight3{
 	display: none;
 }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 35em) {
 	.join{
 		display: none;
 	}
