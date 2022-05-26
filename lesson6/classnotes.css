@@ -1,0 +1,20 @@
+.flex.container-1 {
+    display: flex;
+}
+/* Using flex to adjust picture size, can use it for p not just img */
+.flex-container-1 > * {
+    flex: 0 1 250px; /*Shrink set*/
+    /* 1 lets the image shrink when going smaller, 250 is the max that image is until window is smaller than it */
+    min-width: 0; 
+    /* min-width is on the child and makes it able to shrink, not auto! */
+}
+
+/* using a container instead of div */
+.flex-container-2 img{
+    max-width: 100%;
+    /* If in a container set the size for container and the container is resizing */
+}
+
+/* if you don't set a height for div, it only takes as much space as needed */
+
+/* ** for exponent or Math.pow(2,5) - two to the fifth */
