@@ -133,7 +133,7 @@ nav {margin: 0 2rem;flex: 1 1 25%;position: relative; text-align: right;}
 }
 
 .navigation a:hover {
-	color: #BA3F1D;
+	color: #1F363D;
 	font-weight: 700;
 	text-decoration: underline;
 }
