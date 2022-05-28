@@ -18,10 +18,14 @@
 </head>
 <body>
     <!-- Flex for ther header, you can use flex inside of flex -->
-    <header>
-        <img id="logo" src="/lesson3/images/logo1.png" alt="Logo">
+    <header class="header">
+        <img class="logo" src="images/logo.webp" alt="Logo">
         <h1>Pensacola Chamber of Commerce</h1>
+        <!-- <input class="menu-btn" type="checkbox" id="menu-btn" /> -->
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <nav>
+            <a class="🍔 nohover" href="#">
+                <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></a>
             <ul class="navigation">
                 <li><a href="index.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
@@ -34,53 +38,52 @@
     </header>
     <!-- Grid inside of grid is fine, grid on in main to adjust the section placement -->
     <main>
-        <section class="hero">
-            <p>Hero with site name and call to action</p>
+        <section id="s1">Event</section>
+        <section id="s2">
+            <section>
+                <h3>Weather</h3>
+                <p>Currently: <span id="t">30</span>&#176;F</p>
+                <p>Wind Speed: <span id="s">10</span> mph</p>
+                <p>WindChill: <span id="w"></span></p>
+              </section>
         </section>
-        <div class="ev">
-            <section class="event">
-                <p>Event</p>
-            </section>
-            <section class="weather">
-                <p>Weather</p>
-            </section>
-        </div>
-        <section class="news_release">
-            <p>News Release</p>
+        <section id="s3">Join</section>
+        <section id="s4">
+            <img class="hero_image" src="images/wdd230-750x.webp" alt="people at a desk"
+                srcset="images/wdd230-3000x.webp 3000w,
+                        images/wdd230-1500x.webp 1500w,
+                        images/wdd230-1000x.webp 1000w,
+                        images/wdd230-750x.webp 750w,
+                        images/wdd230-400x.webp 400w,"
+                sizes="(max-width: 47.5rem) 100vw,
+                        50vw"  >
         </section>
-        <div class="spotlight">
-            <section class="spotlight1">
-                <p>Spotlight 1</p>
-            </section>
-            <section class="spotlight2">
-                <p>Spotlight 2</p>
-            </section>
-            <!-- Spotlight 3 will only be visable with the largest view -->
-            <section class="spotlight3">
-                <p>Spotlight 3</p>
-            </section>
-        </div>
-        <section class="join">
-            <p>Join</p>
+        <section id="s5">News</section>
+        <section id="s6">
+            <section class="spotlight1">Spotlight 1</section>
+            <section class="spotlight2">Spotlight 2</section>
+            <section class="spotlight3">Spotlight 3</section>
         </section>
+    </main>
     </main>
 
     <footer>
-        <img id="logo" src="/lesson3/images/logo1.png" alt="Logo">
-        <div class="address">
-            <h3>Pensacola Chamber of Commerce</h3>
-            <p>418 W. Garden St., 4th Floor</p>
-            <p>Pensacola, FL 32502</p>
-        </div>
-        <div class="contact">
-            <p>(850) 475-4999</p>
-            <p>support@pensacolachamber.com</p>
-        </div>
-        <div class="base">
-            <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
-            <p id="special"> Last Modified <span id="lastmod"></span></p>
-        </div>
+            <img id="f_logo" src="images/logo.webp" alt="Logo">
+            <div class="address">
+                <h3>Pensacola Chamber of Commerce</h3>
+                <p>418 W. Garden St., 4th Floor</p>
+                <p>Pensacola, FL 32502</p>
+            </div>
+            <div class="contact">
+                <p>(850) 475-4999</p>
+                <p>support@pensacolachamber.com</p>
+            </div>
+            <div class="base">
+                <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
+                <p id="special"> Last Modified <span id="lastmod"></span></p>
+            </div>
     </footer>
-    
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>

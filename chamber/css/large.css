@@ -1,54 +1,73 @@
-@media only screen and (min-width: 64em) {
-    main{
+@media screen and (min-width: 47.5rem) {
+    header{
         display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
     }
-    header, main, footer{
-        max-width: none;
-        font-size: 1.2em;
-    }
-    footer{
-        display: grid;
-        padding: 1em;
-        align-items: center;
-        justify-content: center;
-    }
-    .ev{
+    .logo{
         grid-column: 1/2;
-        grid-row: 1/3;
-        display: flex;
-        flex-direction: column;
     }
-    .join{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .hero{
-        grid-column: 2/3;
-        grid-row: 1/3;
-    }
-    .news_release{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .spotlight{
-        /* can be a child for grid and a parent for a different grid or flex */
+    nav{
         grid-column: 3/4;
-        grid-row: 1/4;
-        display: flex;
-        flex-direction: column;
-    }
-    .address{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .contact{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .base{
-        border-top: 1px solid black;
-        grid-column: 1/3;
         grid-row: 2/3;
         display: flex;
+        flex-direction: row;
+        box-shadow: none;
     }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 2em;
+    }
+    .navigation li:first-child {
+		display: block;
+	}
+    nav li{
+        font-size: 2en;
+    }
+    nav ul li a {
+        text-align: center;
+        padding: 1.25rem;
+        font-size: 1.25rem;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "event hero spotlight"
+                            "weather hero spotlight"
+                            "join news spotlight";
+        gap: 1rem;
+    }
+
+    #s1{
+        grid-area: event;
+    }
+
+    #s2{
+        grid-area: weather;
+    }
+
+    #s3{
+        grid-area: join;
+        display: block;
+        /* display: block; stops the display none */
+    }
+
+    #s4{
+        grid-area: hero;
+    }
+
+    #s5{
+        grid-area: news;
+    }
+
+    #s6{
+        grid-area: spotlight;
+        display: flex;
+        flex-direction: column;
+    }
+    .spotlight3{
+        display: block;
+    }
+
 }
