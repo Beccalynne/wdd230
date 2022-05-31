@@ -15,7 +15,7 @@ header {
 	margin: initial;
     align-items: center;
     flex-wrap: wrap;
-	background-color: rgba(186, 63, 29, .8);
+	background-color: rgba(186, 63, 29, 1);
 	color: rgb(217, 217, 217) !important;
 }
 header h1{
