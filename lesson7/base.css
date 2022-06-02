@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }

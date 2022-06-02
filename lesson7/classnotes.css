@@ -5,4 +5,19 @@
 
 
 /* Website, place heading under each section */
-/*  */
+/* Add fomula to windchill.js */
+/* Add dimensions to all images, width and height */
+
+
+/* Web storage */
+/* Application is where storage is located */
+/* Cookies have expiration date, still used but no the best method, sending a lot of information back and forth
+Cookies send information about you with the random ID, preferences or log ins, adds, meant to be user helpful
+Even if you clear cookies they are still stored online and will reload on your device */
+
+/* Local storage is on users website but never transfered back and forth
+Nice for settings of the user, using key value pairs
+doesn't expire or unless cleared */
+
+/* Sesion storage acts like local storage
+Expires each time the tab is closed, refreshing the page it will stay */
