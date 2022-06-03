@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 1rem;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+    }
+    .gallery-item {
+      border: 1px solid black;
+      width: 100%;
+      max-width: 400px;
+      /* min-height: 300px; */
+    }
+    .gallery-label {
+      text-align: center;
+      padding: 1rem;
+    }
+    .gallery-item:hover {
+      box-shadow: 0 0 20px #555;
+    }
+    @media screen and (min-width: 56rem) {
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media screen and (min-width: 90rem) {
+      .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 90rem;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gallery Demo</h1>
+  </header>
+  <main>
+    <h2>Image Gallery</h2>
+    <section>
+      <div class="gallery">
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=0" alt="test" width="400"
+              height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=1" alt="test" width="400"
+              height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=2" alt="test" width="400"
+              height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=3" alt="" width="400" height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=4" alt="" width="400" height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=5" alt="" width="400" height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=6" alt="" width="400" height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=7" alt="" width="400" height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=8" alt="" width="400" height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=9" alt="" width="400" height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=10" alt="" width="400"
+              height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+        <div class="gallery-item">
+          <picture>
+            <img src="https://via.placeholder.com/400x300?text=Loading+Image"
+              data-src="https://picsum.photos/400/300?random=11" alt="" width="400"
+              height="300">
+          </picture>
+          <div class="gallery-label">
+            A neat picture
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script>
+    let imagesToLoad = document.querySelectorAll('img[data-src]');
+    const loadImages = (image) => {
+      image.setAttribute('src', image.getAttribute('data-src'));
+      image.onload = () => {
+        image.removeAttribute('data-src');
+      };
+    };
+    // Options passed to the Intersection Observer
+    const imgOptions = {
+      threshold: 1,
+      /* Using -10px for demo purposes, normally use something like 300px so 
+         the images load well before the user scrolls to them */
+      rootMargin: "0px 0px 500px 0px"
+    }
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+          if (item.isIntersecting) {
+            loadImages(item.target);
+            observer.unobserve(item.target);
+          }
+        });
+      }, imgOptions);
+      imagesToLoad.forEach((img) => {
+        observer.observe(img);
+      });
+    } else {
+      imagesToLoad.forEach((img) => {
+        loadImages(img);
+      });
+    }
+  </script>
+</body>
+</html>

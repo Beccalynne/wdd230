@@ -1,3 +1,5 @@
+/* Tuesday Class */
+
 /* should only display if temp is less than 50 and wind speed greater than 5mph */
 
 /* Pull values from page not hard coding it in */
@@ -21,3 +23,22 @@ doesn't expire or unless cleared */
 
 /* Sesion storage acts like local storage
 Expires each time the tab is closed, refreshing the page it will stay */
+
+
+
+/* Thursday */
+
+/* Lazy loading doesn't work right unless there is a specified width x height */
+/* Netwek and image and images should pop in as you scroll */
+
+/* img src placeholder  data-src original image --> in html */
+/* built into chrome in the img tag lazy=loading --> easy to implement but can't control the load time*/
+/* caniuse.com will allow you to see where id or attribute will be supported or not */
+
+/* intersection observer can change color as it scrolls, so it can help with designs
+use js to keep track of how long someone is looking at something on your page, which part they spend time */
+
+/* you can take out src out if you don't want a placeholder or you can do an empty src"" but create a rule for
+img {max-width: 100%, height: auto,  */
+
+/* section would need an heading but article or div doesn't need a heading */
