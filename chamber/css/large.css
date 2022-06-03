@@ -34,7 +34,7 @@
         padding: 1.25rem;
         font-size: 1.25rem;
     }
-    main{
+    main.home {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: "event hero spotlight"
@@ -72,6 +72,39 @@
     }
     .spotlight3{
         display: block;
+    }
+
+    /* Discover Page */
+    main.discover{
+        grid-template-columns: 2fr 3fr;
+        margin: 0 auto;
+    }
+    .demo-pics img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 50% 20% / 10% 40%;
+        filter: blur(4px);
+        transition: 0.5s ease-in-out;
+    }
+    .demo-pics img:hover{
+        filter: blur(0);
+        transition: 0.5s ease-in-out;
+    }
+    .gallery-item {
+        border: 1px solid black;
+        width: 100%;
+        max-width: 400px;
+        /* min-height: 300px; */
+        padding: .5rem;
+        border-radius: 10% / 50%;
+        margin-bottom: .5rem;
+    }
+    .gallery-label {
+        text-align: center;
+        padding: 1rem;
+    } 
+    .gallery-item:hover {
+        box-shadow: 0 0 20px #555;
     }
 
 }

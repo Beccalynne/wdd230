@@ -27,7 +27,7 @@
                 <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></a>
             <ul class="navigation">
                 <li><a href="index.html">Discover</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a href="discover.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="https://www.facebook.com/"><img src="images/5340250_book_face_facebook_fb_icon.png" alt="Facebook Logo" height="48" width="48"></a></li>
@@ -43,23 +43,49 @@
     <!-- Layout(grid/flex) is all up to us, include demographics, 5 images, images need caption, images in a column -->
     <!-- Helpful places to find images - Unsplash.com,  -->
     <main>
-        <section class="demo-pics">
-            <picture><img src="/chamber/images/aviation-museum-300x.webp" alt="aviation museum" width="300" height="200"></picture>
-            <picture><img src="/chamber/images/beach-300x.webp" alt="beach" width="300" height="225"></picture>
-            <picture><img src="/chamber/images/beach-fishing-300x.webp" alt="fishing boat with rods off the back" width="300" height="200"></picture>
-            <picture><img src="/chamber/images/fishing-300x.webp" alt="man fishing with two children playing on the beach" width="300" height="200"></picture>
-            <picture><img src="/chamber/images/pt-300x.webp" alt="healthcare worker helping elderly with stress ball" width="300" height="169"></picture>
-            <picture><img src="/chamber/images/x-ray-300x.webp" alt="three doctors looking at panoramic dental x-ray" width="300" height="200"></picture>
-        </section>
-        <section class="demographics">
-            <h1>Demographics</h1>
-            <p>Elevation: 102'</p>
-            <p>Population: 52,918 as of 2020</p>
-            <p>Metro Population: 497,883</p>
-            <h2>Economy</h2>
-            <p>Military, tourism, and healthcare are the main makeups of the economy.</p>
-        </section>
+        <div class="discover">
+            <section class="demo-pics">
 
+                <div class="gallery-item">
+                    <picture><img src="https://via.placeholder.com/200x300?text=Loading+Image"
+                        data-src="../chamber/images/aviation-museum-300x.webp" alt="aviation museum" width="300" height="200"></picture>
+                    <div class="gallery-label caption">Aviation Museum</div>
+                </div>
+                <div class="gallery-item">
+                    <picture><img src="https://via.placeholder.com/200x300?text=Loading+Image"
+                    data-src="../chamber/images/beach-300x.webp" alt="beach" width="300" height="225"></picture>
+                    <div class="gallery-label caption">Sandy Beaches</div>
+                </div>
+                <div class="gallery-item">
+                    <picture><img src="https://via.placeholder.com/200x300?text=Loading+Image"
+                        data-src="../chamber/images/beach-fishing-300x.webp" alt="man fishing with two children playing on the beach with two children playing on the beach" width="300" height="200"></picture>
+                    <div class="gallery-label caption" class="caption">Fun for everyone, fishing for dad and sandy beaches for kids</div>
+                </div>
+                <div class="gallery-item">
+                    <picture><img src="https://via.placeholder.com/200x300?text=Loading+Image"
+                        data-src="../chamber/images/fishing-300x.webp" alt="fishing boat with rods off the back" width="300" height="200"></picture>
+                    <div class="gallery-label caption">Ocean fishing</div>
+                </div>
+                <div class="gallery-item">
+                    <picture><img src="https://via.placeholder.com/200x300?text=Loading+Image"
+                        data-src="../chamber/images/pt-300x.webp" alt="healthcare worker helping elderly with stress ball" width="300" height="169"></picture>
+                    <div class="gallery-label caption">Healthcare is one of our main priorities</div>
+                </div>
+                <div class="gallery-item">
+                    <picture><img src="https://via.placeholder.com/200x300?text=Loading+Image"
+                        data-src="../chamber/images/x-ray-300x.webp" alt="three doctors looking at panoramic dental x-ray" width="300" height="200"></picture>
+                    <div class="gallery-label caption">Our focus is to keep you healthy</div>
+                </div>
+            </section>
+            <section class="demographics">
+                <h1>Demographics</h1>
+                <p>Elevation: 102'</p>
+                <p>Population: 52,918 as of 2020</p>
+                <p>Metro Population: 497,883</p>
+                <h2>Economy</h2>
+                <p>Military, tourism, and healthcare are the main makeups of the economy.</p>
+            </section>
+        </div>
 
     </main>
 
@@ -78,6 +104,7 @@
         <div class="base">
             <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
             <p id="special"> Last Modified <span id="lastmod"></span></p>
+            <p>Last Visited <span id="days-ago"></span> days ago.</p>
         </div>
     </footer>
     <script src="js/script.js"></script>

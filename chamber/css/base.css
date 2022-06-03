@@ -35,7 +35,7 @@ nav ul {
 
 nav ul li a {
 	display: block;
-	color: #fff;
+	color: rgb(217, 217, 217);
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
@@ -58,7 +58,10 @@ footer{
 	padding: 1em;
 	margin: initial;
 	text-align: center;
-	background-color: rgba(186, 63, 29, .8);
+	background-color: rgba(186, 63, 29, 1);
+}
+footer.address, footer.contact, footer.base{
+	color: rgb(217, 217, 217);
 }
 
 h1, h2, h3, h4{
@@ -115,6 +118,15 @@ img{
 
 .contact{
 	padding: 1em;
+}
+
+.discover{
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+.caption{
+	font-family: 'Bebas Neue', cursive;
+	color: #BA3F1D;
 }
 
 
