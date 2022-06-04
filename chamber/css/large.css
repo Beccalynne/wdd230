@@ -91,7 +91,7 @@
         transition: 0.5s ease-in-out;
     }
     .gallery-item {
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 100%;
         max-width: 400px;
         /* min-height: 300px; */
