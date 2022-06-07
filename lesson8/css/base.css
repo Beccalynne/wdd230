@@ -1,0 +1,36 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    /* Only works within tables */
+    box-shadow: 10px 10px 10px #7197ae;
+}
+
+thead tr:nth-child(2){
+    background-color: #628ca6;
+    color: white;
+}
+th, td{
+    border: 1px solid #c6cdc8;
+    padding: 0.25em 0.25em;
+    text-align: center;
+}
+/* Does the striping, you can make it odd or even */
+tr:nth-child(even){
+    background-color: #e7ffed;
+}
+tr:nth-child(odd){
+    background-color: #e7f0ed;
+}
+thead>tr:nth-child(1), tfoot>tr:nth-child(1){
+    background-color: #7fb9c2;
+}
+tbody>tr:nth-child(4)>td:nth-child(3){
+    background-color: #628ca6;
+    color: white;
+}
+.table-center{
+    text-align: center;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Demo - class follow along</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            /* Only works within tables */
+        }
+        thead{
+            background-color: #555;
+            color: white;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 0.25em 0.25em;
+        }
+        /* Does the striping, you can make it odd or even */
+        tr:nth-child(even){
+            background-color: #ccc;
+        }
+        .table-center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Demo</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Student GPA's</th>
+            </tr>
+            <tr>
+                <!-- scope helpes with screen readers, if header is for row or column -->
+                <th scope="col">Name</th>
+                <th scope="col">Major</th>
+                <th scope="col">GPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Bob</th>
+                <td>WDD</td>
+                <td>4.0</td>
+            </tr>
+            <tr>
+                <td>Sue</td>
+                <td class="table-center"colspan="2">SWE</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>CS</td>
+                <td>2.0</td>
+            </tr>
+            <tr>
+                <td>Reed</td>
+                <td>Art</td>
+                <td>3.4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Have to put into a tr/td because just text would be placed above the table -->
+            <tr>
+                <td colspan="3" class="table-center">&copy; Copyright 2022</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
