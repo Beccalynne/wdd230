@@ -49,6 +49,36 @@ footer {
     text-align: center;
 }
 
+/* Join */
+form{
+    max-width: 320px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+form label,
+form input{
+    display: block;
+    width: 100%;
+}
+label input{
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+form input{
+    margin-bottom: 1em;
+    padding: .75rem;
+}
+
+form label.required::after{
+    content: " *required";
+    color: red;
+}
+input:invalid{
+    box-shadow: 0 0 2px 1px red;
+}
+
 #profile.pic {
     width: 150px;
     height: auto;

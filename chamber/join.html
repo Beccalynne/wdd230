@@ -36,6 +36,62 @@
                 </ul>
             </nav>
         </header>
+
+    <main class="join">
+        <form method="get" action="thankyou.html">
+            <label for="firstname" class="required">First Name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus required>
+
+            <label for="lastname" class="required">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+
+            <label>
+                <input type="radio" name="membership" value="Non-Profit">
+                Non-Profit
+            </label>
+            <label>
+                <input type="radio" name="membership" value="Bronze">
+                Bronze
+            </label>
+            <label>
+                <input type="radio" name="membership" value="Silver">
+                Silver
+            </label>
+            <label>
+                <input type="radio" name="membership" value="Gold">
+                Gold
+            </label>
+
+            <label for="phone">Phone Number (555-555-5555):</label>
+            <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="\d\d\d-\d\d\d-\d\d\d\d">
+
+            <label for="example" class="required">Example</label>
+            <input type="text" name="example" id="example" pattern="\w{5+}" required>
+
+
+
+            <input type="submit" value="Sign Up">
+
+        </form>
+    </main> 
+
+    <footer>
+        <img id="f_logo" src="images/logo.webp" alt="Logo">
+        <div class="address">
+            <h3>Pensacola Chamber of Commerce</h3>
+            <p>418 W. Garden St., 4th Floor</p>
+            <p>Pensacola, FL 32502</p>
+        </div>
+        <div class="contact">
+            <p>(850) 475-4999</p>
+            <p>support@pensacolachamber.com</p>
+        </div>
+        <div class="base">
+            <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
+            <p id="special"> Last Modified <span id="lastmod"></span></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
