@@ -60,7 +60,7 @@ footer{
 	text-align: center;
 	background-color: rgba(186, 63, 29, 1);
 }
-footer.address, footer.contact, footer.base{
+footer div>h2, div>p{
 	color: rgb(217, 217, 217);
 }
 
@@ -104,7 +104,6 @@ img{
 
 .logo{
     max-width: 5em;
-    max-height: auto;
 }
 
 .spotlight3{
@@ -209,3 +208,42 @@ nav {margin: 0 2rem;flex: 1 1 25%;position: relative; text-align: right;}
 		display: none;
 	}
 }
+
+/* join */
+main.join{
+    max-width: 320px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+form label,
+form input{
+    display: block;
+    width: 100%;
+}
+label input{
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+form input{
+    margin-bottom: 1em;
+    padding: .75rem;
+}
+
+form label.required::after{
+    content: " *required";
+    color: red;
+}
+input:invalid{
+    box-shadow: 0 0 2px 1px red;
+}
+
+#profile.pic {
+    width: 150px;
+    height: auto;
+}
+
+/* #special {
+    color: brown;
+} */

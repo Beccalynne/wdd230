@@ -27,7 +27,7 @@
 		display: block;
 	}
     nav li{
-        font-size: 2en;
+        font-size: 2em;
     }
     nav ul li a {
         text-align: center;
@@ -105,6 +105,16 @@
     } 
     .gallery-item:hover {
         box-shadow: 0 0 20px #555;
+    }
+
+    main.join{
+        max-width: 47.5rem;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 1em;
+    }
+    main.join form{
+        margin: 1em 0;
     }
 
 }

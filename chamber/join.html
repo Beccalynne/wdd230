@@ -19,7 +19,7 @@
 <body>
         <!-- Flex for ther header, you can use flex inside of flex -->
         <header class="header">
-            <img class="logo" src="images/logo.webp" alt="Logo">
+            <img class="logo" src="images/logo.webp" alt="Logo" width="128" height="128">
             <h1>Pensacola Chamber of Commerce</h1>
             <!-- <input class="menu-btn" type="checkbox" id="menu-btn" /> -->
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -45,6 +45,18 @@
             <label for="lastname" class="required">Last Name:</label>
             <input type="text" name="lastname" id="lastname" required>
 
+            <label for="position">Business Position Title:</label>
+            <input type="text" name="position" id="position">
+
+            <label for="email">Email: (becca@chamber.com)</label>
+            <input type="email" name="email" id="email" placeholder="becca@chamber.com">
+
+            <label for="phone" class="required">Phone Number (555-555-5555):</label>
+            <input type="tel" name="phone" id="phone" placeholder="555-555-5555" required pattern="\d\d\d-\d\d\d-\d\d\d\d">
+
+            <label for="business-name" class="required">Business Name</label>
+            <input type="text" name="business-name" id="business-name" required>
+
             <label>
                 <input type="radio" name="membership" value="Non-Profit">
                 Non-Profit
@@ -62,11 +74,10 @@
                 Gold
             </label>
 
-            <label for="phone">Phone Number (555-555-5555):</label>
-            <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="\d\d\d-\d\d\d-\d\d\d\d">
+            <label for="description">Business description</label>
+            <input type="text" name="description" id="description">
 
-            <label for="example" class="required">Example</label>
-            <input type="text" name="example" id="example" pattern="\w{5+}" required>
+
 
 
 
@@ -76,9 +87,9 @@
     </main> 
 
     <footer>
-        <img id="f_logo" src="images/logo.webp" alt="Logo">
+        <img id="f_logo" src="images/logo.webp" alt="Logo" width="128" height="128">
         <div class="address">
-            <h3>Pensacola Chamber of Commerce</h3>
+            <h2>Pensacola Chamber of Commerce</h2>
             <p>418 W. Garden St., 4th Floor</p>
             <p>Pensacola, FL 32502</p>
         </div>
