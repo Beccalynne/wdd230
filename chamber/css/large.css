@@ -112,9 +112,28 @@
         margin: 0 auto;
         border: 1px solid #ccc;
         padding: 1em;
+        display: grid;
+        grid-template-columns: 2fr .5fr 1fr;
+    }
+    main.join h2{
+        grid-row: 1/2;
+        grid-column: 1/4;
     }
     main.join form{
         margin: 1em 0;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    main.join #membership{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: block;
     }
 
+    /* #membership{
+        display: block;
+        position: relative;
+        right: 0;
+        bottom: 500px;
+    } */
 }

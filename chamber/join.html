@@ -36,7 +36,31 @@
         </header>
 
     <main class="join">
-        <form method="get" action="thankyou.html">
+        <h2>Join Our Commerce!</h2>
+        <section id="membership">
+            <h3>Membership Levels:</h3>
+            <div>
+                <h4>Gold:</h4>
+                <p>Cost: $300</p>
+                <p>Gold membership includes unlimited access to the pool, features on our commerce page, and an invite to our Christmas Party.</p>
+            </div>
+            <div>
+                <h4>Silver:</h4>
+                <p>Cost: $200</p>
+                <p>Silver Membership includes limited access to the pool.</p>
+            </div>
+            <div>
+                <h4>Bronze:</h4>
+                <p>Cost: $100</p>
+                <p>Bronze membership includes invite to all meetings and support through the chamber of commerce.</p>
+            </div>
+            <div>
+                <h4>Non-Profit:</h4>
+                <p>Cost: None with proof of non-profit status</p>
+                <p>Non-Profit membership include all of the benefits of bronze and silver membership.</p>
+            </div>
+        </section>
+        <form method="get" action="/chamber/thank-you.html">
             <label for="firstname" class="required">First Name:</label>
             <input type="text" name="firstname" id="firstname" autofocus required>
 
@@ -97,10 +121,11 @@
         </div>
         <div class="base">
             <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
-            <p id="special"> Last Modified <span id="lastmod"></span></p>
+            <!-- <p id="special"> Last Modified <span id="lastmod"></span></p> -->
+            <p id="date"></p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/date-time.js"></script>
     
 </body>
 </html>
