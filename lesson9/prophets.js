@@ -23,9 +23,9 @@ fetch(requestURL)
   h2.textContent = prophet.name + ' ' + prophet.lastname;
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-  let .setAttribute('src', prophet.imageurl); 
-  const setAttribute('alt', 'Portait of ' + prophet.name + ' ' + prophet.lastname);
-  let set.setAttribute('loading', 'lazy');
+  // const setAttribute('src', prophet.imageurl); 
+  // var setAttribute('alt', 'Portait of ' + prophet.name + ' ' + prophet.lastname);
+  // let setAttribute('loading', 'lazy');
 
   // Add/append the section(card) with the h2 element
   card.appendChild(h2);
