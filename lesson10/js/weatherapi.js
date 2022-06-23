@@ -1,15 +1,34 @@
-// select HTML elements to edit
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-api.openweathermap.org/data/2.5/forecast?id=524901&appid={87a848c7fb26d12378498716d5b8f68};
+const base_url = "https://api.openweathermap.org/data/2.5/weather?";
 
-const url = "...";
+const city_name = "Fairbanks";
+const state_code = "AK";
+const country_code = "US";
+const appid = "87a848c7fb26d123784987168d5b8f68";
+const units = "imperial";
+
+const url = `${base_url}?q=${city_name},${state_code},${country_code}&appid=${appid}&units=${units}`;
+
+// let icons = {
+//   "light rain" : "images/light-rain.png",
+//   "snow" : "images/snow.png"
+// }
+
+// You can make a local json file by calling it and then saving the data
 fetch(url)
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data); // this is temporary for development only
-    currentTemp.innerHTML = `<strong>${data.main.temp.toFixed(0)}</strong>`;
-  });
+.then(response => response.json())
+.then(data => {
+  console.log(data);
+  const temperature = data["main"]["temp"];
+  currentTemp.textContent = Math.round(temperature);
+
+  const base_img_url = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
+  console.log(base_img_url);
+
+})
+
+
 
