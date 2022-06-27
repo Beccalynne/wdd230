@@ -5,9 +5,9 @@
 }
 
 header, main, footer, section{
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	min-height: 150px;
-	border-radius: 15px;
+	/* border-radius: 15px; */
 }
 
 header {
@@ -269,9 +269,9 @@ input:invalid{
 	padding: 1rem;
 }
 
-.directory article,
-section {
+.directory article{
 	margin: 0.75rem;
+	max-width: 450px;
 }
 
 .grid {
@@ -292,25 +292,25 @@ section {
 	text-align: center;
 }
 
-.grid section > * {
+.grid article > * {
 	margin: 0.1rem;
 }
 
-.list section {
+.list article {
 	flex-direction: row;
 	justify-content: left;
 }
 
-.list section > * {
+.list article > * {
 	margin: 0 1rem;
 	text-align: left;
 }
 
-.list section img {
+.list article img {
 	display: none; /* smaller viewports only */
 }
 
-section h2 {
+article h2 {
 	font-size: 1.5rem;
 }
 img {
@@ -319,7 +319,7 @@ img {
 }
 
 @media (min-width: 700px) {
-	.list section img {
+	.list article img {
 		display: block;
 	}
 }
@@ -329,4 +329,17 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+}
+
+.cards{
+	max-width: 100%;
+
+}
+
+p section .cards{
+	max-width: 100%;
+}
+
+.list section .portrait{
+	display: none;
 }

@@ -25,8 +25,11 @@ fetch(url)
   const temperature = data["main"]["temp"];
   currentTemp.textContent = Math.round(temperature);
 
-  const base_img_url = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
-  console.log(base_img_url);
+  const base_image_url = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
+  console.log(base_image_url);
+
+  weatherIcon.setAttribute('src', base_image_url);
+  weatherIcon.setAttribute('alt'. data.weather[0].description);
 
 })
 
