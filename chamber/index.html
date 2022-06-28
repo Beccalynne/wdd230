@@ -37,16 +37,17 @@
     <main class="home">
         <section id="s1">Event</section>
         <section id="s2">
-            <section>
+            <!-- <section> -->
                 <h3>Weather</h3>
-                <p>Currently: <span id="t"></span>&#176;F</p>
-                <p>Wind Speed: <span id="s"></span> mph</p>
+                <p>Currently: <span id="current-temp"></span>&#176;F</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
                 <p>WindChill: <span id="w"></span></p>
                 <figure>
                     <img src="" alt="" id="weather-icon" />
                     <figcaption></figcaption>
-                  </figure>
-              </section>
+                </figure>
+                <p>Weather information provided by OpenWeatherMap.org</p>
+            <!-- </section> -->
         </section>
         <section id="s3">Join</section>
         <section id="s4">
@@ -79,8 +80,8 @@
                 <p>support@pensacolachamber.com</p>
             </div>
             <div class="base">
-                <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
-                <p id="special"> Last Modified <span id="lastmod"></span></p>
+                <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID | </p>
+                <p id="special"> Last Modified <span id="lastmod"></span> <span id="days-ago">Days Since Visited</span></p>
             </div>
     </footer>
     <script src="js/script.js"></script>

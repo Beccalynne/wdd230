@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact the Pensacola Chamber of Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
     <header class="header">
@@ -28,14 +36,68 @@
     <main class="contact">
         <section class="person" id="president">
             <h1>John Doe</h1>
+            <img src="images/john_doe.webp" alt="Pensacola Chamber of Commerce President John Doe" width="500" height="502">
             <p>President of the Pensacola Chamber of Commerce for the last 10 years</p>
-            <img src="" alt="Pensacola Chamber of Commerce President John Doe">
         </section>
         <section class="person" id="vicepresident">
             <h1>Mary Marie</h1>
+            <img src="images/mary_marie.webp" alt="Pensacola Chamber of Commerce Vice President Mary Marie" width="500" height="499">
             <p>Vice President of the Pensacola Chamber of Commerce for the last 2 years</p>
-            <img src="" alt="Pensacola Chamber of Commerce Vice President Mary Marie">
         </section>
+        <section class="person" id="secretary">
+            <h1>Ester Being</h1>
+            <img src="images/ester_being.webp" alt="Pensacola Chamber of Commerce Secretary Ester Being" width="500" height="505">
+            <p>Secretary of the Pensacola Chamber of Commerce for the last 5 years</p>
+        </section>
+        <section class="person" id="treasurer">
+            <h1>Barry Words</h1>
+            <img src="images/barry_words.webp" alt="Pensacola Chamber of Commerce Treasurer Barry Words" width="500" height="506">
+            <p>Treasurer of the Pensacola Chamber of Commerce for the last 2 years</p>
+        </section>
+
+        <h2>Join our Commerce Here!</h2>
+        <!-- Same form from join page -->
+        <form method="get" action="/chamber/thank-you.html">
+            <label for="firstname" class="required">First Name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus required>
+
+            <label for="lastname" class="required">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+
+            <label for="position">Business Position Title:</label>
+            <input type="text" name="position" id="position">
+
+            <label for="email">Email: (becca@chamber.com)</label>
+            <input type="email" name="email" id="email" placeholder="becca@chamber.com">
+
+            <label for="phone" class="required">Phone Number (555-555-5555):</label>
+            <input type="tel" name="phone" id="phone" placeholder="555-555-5555" required pattern="\d\d\d-\d\d\d-\d\d\d\d">
+
+            <label for="business-name" class="required">Business Name</label>
+            <input type="text" name="business-name" id="business-name" required>
+
+            <label>
+                <input type="radio" name="membership" value="Non-Profit">
+                Non-Profit
+            </label>
+            <label>
+                <input type="radio" name="membership" value="Bronze">
+                Bronze
+            </label>
+            <label>
+                <input type="radio" name="membership" value="Silver">
+                Silver
+            </label>
+            <label>
+                <input type="radio" name="membership" value="Gold">
+                Gold
+            </label>
+
+            <label for="description">Business description</label>
+            <input type="text" name="description" id="description">
+
+            <input type="submit" value="Sign Up">
+        </form>
     </main>
 
     <footer>
@@ -50,11 +112,12 @@
             <p>support@pensacolachamber.com</p>
         </div>
         <div class="base">
-            <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
-            <!-- <p id="special"> Last Modified <span id="lastmod"></span></p> -->
+            <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID | </p>
+            <p id="special"> Last Modified <span id="lastmod"></span> <span id="days-ago">| Days Since Visited</span></p>
             <!-- <p id="date"></p> -->
         </div>
     </footer>
+    <script src="js/script.js"></script>
     
 </body>
 </html>

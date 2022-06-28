@@ -97,4 +97,20 @@
     .gallery-item:hover {
         box-shadow: 0 0 20px #555;
     }
+
+    /* contact page */
+    main.contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    main.contact section{
+        margin: 1em;
+    }
+    /* main.contact .person{
+        display: flex;
+    } */
+    main.contact h2, form{
+        grid-column: 1/3;
+        font-size: larger;
+    }
 }
