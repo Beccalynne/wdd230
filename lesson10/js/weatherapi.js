@@ -5,12 +5,10 @@ const captionDesc = document.querySelector('figcaption');
 const base_url = "https://api.openweathermap.org/data/2.5/weather?";
 
 const city_name = "Fairbanks";
-const state_code = "AK";
-const country_code = "US";
 const appid = "87a848c7fb26d123784987168d5b8f68";
 const units = "imperial";
 
-const url = `${base_url}?q=${city_name},${state_code},${country_code}&appid=${appid}&units=${units}`;
+const url = `${base_url}q=${city_name}&appid=${appid}&units=${units}`;
 
 // let icons = {
 //   "light rain" : "images/light-rain.png",
@@ -29,7 +27,7 @@ fetch(url)
   console.log(base_image_url);
 
   weatherIcon.setAttribute('src', base_image_url);
-  weatherIcon.setAttribute('alt'. data.weather[0].description);
+  weatherIcon.setAttribute('alt', data.weather[0].description);
 
 })
 

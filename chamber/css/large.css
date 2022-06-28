@@ -136,4 +136,11 @@
         right: 0;
         bottom: 500px;
     } */
+
+    /* Thank you Page */
+    /* Thank you Page */
+    main.thankyou h1{
+	    grid-column: auto;
+        text-align: center;
+    }
 }
