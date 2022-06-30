@@ -35,13 +35,22 @@
         </nav>
     </header>
     <main class="home">
-        <section id="s1">Event</section>
+        <section id="s1">
+            <h2>Fourth of July Parade!</h2>
+            <!-- <img src="images/sparkler.webp" alt="Lit Sparkler" width="500" height="298"> -->
+            <p>Where: Main St</p>
+            <p>Starts at 8AM</p>
+            <p>Come join the fun with local vendors and watch floats of local groups! Great for all ages.</p>
+        </section>
         <section id="s2">
             <!-- <section> -->
-                <h3>Weather</h3>
-                <p>Currently: <span id="current-temp"></span>&#176;F</p>
-                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
-                <p>WindChill: <span id="w"></span></p>
+                <h2>Weather</h2>
+                <article class="weather">
+
+                    <p>Currently: <span id="current-temp"></span>&#176;F</p>
+                    <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+                    <p>WindChill: <span id="w"></span></p>
+                </article>
                 <figure>
                     <img src="" alt="" id="weather-icon" />
                     <figcaption></figcaption>
@@ -49,7 +58,15 @@
                 <p>Weather information provided by OpenWeatherMap.org</p>
             <!-- </section> -->
         </section>
-        <section id="s3">Join</section>
+        <section id="s3">
+            <h2>Sign Up Today!</h2>
+            <form method="get" action="/chamber/thank-you.html">
+                <label for="email">Email: (becca@chamber.com)</label>
+                <input type="email" name="email" id="email" placeholder="becca@chamber.com">
+
+                <input type="submit" value="Sign Up">
+            </form>
+        </section>
         <section id="s4">
             <img class="hero_image" src="images/wdd230-750x.webp" alt="outdoor market"
                 srcset="images/wdd230-3000x.webp 3000w,
@@ -60,7 +77,16 @@
                 sizes="(max-width: 47.5rem) 100vw,
                         50vw"  >
         </section>
-        <section id="s5">News</section>
+        <section id="s5">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><a href="https://growthzonesitesprod.azureedge.net/wp-content/uploads/sites/1234/2022/06/Post-Blues-Sunset-Beach-Cleanup-2022.pdf">July 11 - KPB: Post-Blues Sunset Beach Cleanup to be Hosted on Pensacola Beach</a></li>
+                <li><a href="https://growthzonesitesprod.azureedge.net/wp-content/uploads/sites/1234/2022/04/My-name-is-David-Mynett-from-Wounded-Warrior-Project.pdf">July 18 - Wounded Warrior Project Back to School Backpack Drive Supply Handout</a></li>
+                <li><a href="https://growthzonesitesprod.azureedge.net/wp-content/uploads/sites/1234/2022/06/news.pdf">July 18 - Florida Procurement Technical Assistance Center presents “Government Contracting 101”</a></li>
+                <li><a href="https://growthzonesitesprod.azureedge.net/wp-content/uploads/sites/1234/2022/05/Plantation-Open-House-Flyer-1.pdf">July 22 - Beck Partners: Office Open House - 7282 Plantation Rd. </a></li>
+            </ul>
+            <p>All events are directly from the Pensacola Chamber of Commerce</p>
+        </section>
         <section id="s6">
             <section class="spotlight1">Spotlight 1</section>
             <section class="spotlight2">Spotlight 2</section>
