@@ -1,6 +1,6 @@
 // Calling current weather
 const currentTemp = document.querySelector('#current-temp');
-const windspeed = document.querySelector('#windSpeed');
+const currentWindSpeed = document.querySelector('#windSpeed');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
@@ -18,9 +18,10 @@ fetch(url)
 .then(data => {
   console.log(data);
   const temperature = data["main"]["temp"];
-  // const windSpeed = data.wind.speed;
+  const windSpeed = data["wind"]["speed"];
   // const speed = data.wind.speed;
   currentTemp.textContent = Math.round(temperature);
+  currentWindSpeed.textContent = Math.round(windSpeed);
 
   const base_image_url = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
   console.log(base_image_url);
@@ -45,8 +46,8 @@ if (temp <= 50 && s > 3) {
 // output
 document.querySelector("#w").innerHTML = windchill;
 
-function windChill(temp, speed) {
-  windChill = (35.74 + (0.6215 * temp))-(35.75 * Math.pow(speed,0.16)) + (0.4275*temp*Math.pow(speed,0.16));
+function windChill(temp, windSpeed) {
+  windChill = (35.74 + (0.6215 * temp))-(35.75 * Math.pow(windSpeed,0.16)) + (0.4275*temp*Math.pow(windSpeed,0.16));
   return Math.round(windChill);
-  // (35.74 + (0.6215 * temp))-(35.75 * Math.pow(wSpeed,0.16)) + (0.4275*temp*Math.pow(wSpeed,0.16));
 }
+
