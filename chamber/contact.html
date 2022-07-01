@@ -18,10 +18,12 @@
     <header class="header">
         <a href="index.html"><img class="logo" src="images/logo.webp" alt="Logo" width="128" height="128"></a>
         <h1>Pensacola Chamber of Commerce</h1>
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <div class="ham">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <nav>
-            <a class="🍔 nohover" href="#">
-                <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></a>
             <ul class="navigation">
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -35,27 +37,27 @@
 
     <main class="contact">
         <section class="person" id="president">
-            <h1>John Doe</h1>
+            <h2>John Doe</h2>
             <img src="images/john_doe.webp" alt="Pensacola Chamber of Commerce President John Doe" width="500" height="502">
             <p>President of the Pensacola Chamber of Commerce for the last 10 years</p>
         </section>
         <section class="person" id="vicepresident">
-            <h1>Mary Marie</h1>
+            <h2>Mary Marie</h2>
             <img src="images/mary_marie.webp" alt="Pensacola Chamber of Commerce Vice President Mary Marie" width="500" height="499">
             <p>Vice President of the Pensacola Chamber of Commerce for the last 2 years</p>
         </section>
         <section class="person" id="secretary">
-            <h1>Ester Being</h1>
+            <h2>Ester Being</h2>
             <img src="images/ester_being.webp" alt="Pensacola Chamber of Commerce Secretary Ester Being" width="500" height="505">
             <p>Secretary of the Pensacola Chamber of Commerce for the last 5 years</p>
         </section>
         <section class="person" id="treasurer">
-            <h1>Barry Words</h1>
+            <h2>Barry Words</h2>
             <img src="images/barry_words.webp" alt="Pensacola Chamber of Commerce Treasurer Barry Words" width="500" height="506">
             <p>Treasurer of the Pensacola Chamber of Commerce for the last 2 years</p>
         </section>
 
-        <h2>Join our Commerce Here!</h2>
+        <h3>Join our Commerce Here!</h3>
         <!-- Same form from join page -->
         <form method="get" action="/chamber/thank-you.html">
             <label for="firstname" class="required">First Name:</label>
@@ -113,10 +115,10 @@
         </div>
         <div class="base">
             <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID | </p>
-            <p id="special"> Last Modified <span id="lastmod"></span> <span id="days-ago">| Days Since Visited</span></p>
-            <!-- <p id="date"></p> -->
+            <p id="special"> Last Modified <span id="lastmod"></span></p>
+            <p>| Days Since Visited <span id="days-ago"></span></p>
         </div>
-    </footer>
+</footer>
     <script src="js/script.js"></script>
     
 </body>

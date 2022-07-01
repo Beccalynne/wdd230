@@ -167,6 +167,34 @@ nav {margin: 0 2rem;flex: 1 1 25%;position: relative; text-align: right;}
 .responsive a {
 	font-size: 1.3rem;
 }
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.responsive .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.responsive .bar2 {
+    opacity: 0;
+}
+
+.responsive .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.navigation a:hover {
+    color: #f8f8f8;
+    background-color: #0D3B66;
+}
 
 .responsive {
 	position: absolute;
@@ -175,9 +203,25 @@ nav {margin: 0 2rem;flex: 1 1 25%;position: relative; text-align: right;}
 	background-color: #BA3F1D;
 	box-shadow: 0 0 15px #333;
 }
+.ham{
+	position: absolute;
+	top: 45px;
+	right: 0;
+	background-color: #BA3F1D;
+}
 
 .responsive a, .responsive a:visited {
 	color: white;
+}
+
+.banner{
+	grid-column: 1/4;
+	grid-row: 2/3;
+}
+.banner>h3{
+	color: #f8f8f8;
+	font-size: larger;
+	text-align: center;
 }
 
 main.home #s1{
@@ -409,7 +453,8 @@ main.directory img {
 main.contact .person{
 	text-align: center;
 }
-main.contact h2{
+main.contact>h3{
 	font-size: 1.5em;
 	margin: 2em auto 1em;
+	text-align: center;
 }

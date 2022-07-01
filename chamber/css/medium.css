@@ -111,12 +111,13 @@
     main.contact section{
         margin: 1em;
     }
-    /* main.contact .person{
-        display: flex;
-    } */
-    main.contact h2, form{
+    main.contact h3, form{
         grid-column: 1/3;
         font-size: larger;
+    }
+    main.contact h3{
+        font-size: 2rem;
+        margin-bottom: 10px;
     }
 
     /* Directory */
@@ -137,9 +138,4 @@
         max-width: 47.5rem;
         padding: 0;
     }
-    /* .grid {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    } */
 }

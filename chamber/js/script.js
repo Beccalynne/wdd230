@@ -1,30 +1,6 @@
-document.querySelector("#lastmod").textContent = document.lastModified;
-// try{
-//     let options = {
-//         year: "numeric"
-//     }
-//     document.getElementById("#currentyear").textContent = new Date().toLocaleDateString("en-US", options);
-// } catch (e) {
-//     alert("Error with code in browser");
-// }
-const hambutton = document.querySelector('.🍔');
-const mainnav = document.querySelector('.navigation');
-
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-/* 🌮 *****************************************************
-Arrow Functions - es6 syntactically compact alternative to a regular function expression
-see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
-or
-https://www.w3schools.com/js/js_arrow_function.asp
-******************************************************/
-
-// To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) {mainnav.classList.remove('responsive')}};
-
-
-
 // Last Modified
+document.querySelector("#lastmod").textContent = document.lastModified;
+document.querySelector("#year").textContent = new Date().getFullYear();
 
 let lastVisitDate;
 const now = Date.now();
@@ -44,3 +20,13 @@ console.log(daysSinceLastVisit);
 
 // document.querySelector('#seconds-ago').textContent = secondsSinceLastVisit;
 document.querySelector('#days-ago').textContent = daysSinceLastVisit
+
+
+// hamburger
+const hambutton = document.querySelector('.ham');
+const mainnav = document.querySelector('.navigation')
+
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+hambutton.addEventListener('click', () => {hambutton.classList.toggle('responsive')}, false);
+
+

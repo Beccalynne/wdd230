@@ -20,10 +20,12 @@
     <header class="header">
         <a href="index.html"><img class="logo" src="images/logo.webp" alt="Logo" width="128" height="128"></a>
         <h1>Pensacola Chamber of Commerce</h1>
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <div class="ham">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <nav>
-            <a class="🍔 nohover" href="#">
-                <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg></a>
             <ul class="navigation">
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -34,13 +36,6 @@
             </ul>
         </nav>
     </header>
-    <!-- What type of city, look at wiki for demographics; get ideas from chamber of commerce sites -->
-    <!-- minimum of 5 picutres, as a column down the page (not all pictures!) - tourism and attractions -->
-    <!-- All pictures need lazy loading (don't have to use src set) and local storage -->
-    <!-- Add hover affect for pictures except for small view, pictures can be 1 or 2 sizes,
-    layout should change the most, and use webp-->
-    <!-- Layout(grid/flex) is all up to us, include demographics, 5 images, images need caption, images in a column -->
-    <!-- Helpful places to find images - Unsplash.com,  -->
     <main>
         <div class="discover">
             <section class="demo-pics">
@@ -101,11 +96,11 @@
             <p>support@pensacolachamber.com</p>
         </div>
         <div class="base">
-            <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID </p>
+            <p>&copy; <span id="year"></span> | Becca Norman | Rexburg ID | </p>
             <p id="special"> Last Modified <span id="lastmod"></span></p>
-            <p>Last Visited <span id="days-ago"></span> days ago.</p>
+            <p>| Days Since Visited <span id="days-ago"></span></p>
         </div>
-    </footer>
+</footer>
     <script src="js/script.js"></script>
     <script src="js/discover.js"></script>
 </body>
