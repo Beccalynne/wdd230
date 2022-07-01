@@ -143,4 +143,9 @@
 	    grid-column: auto;
         text-align: center;
     }
+
+    /* Directory */
+    .grid .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

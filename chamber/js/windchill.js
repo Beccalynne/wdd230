@@ -37,17 +37,32 @@ let temp = parseFloat(document.querySelector("#current-temp").textContent);
 let windSpeed = parseFloat(document.querySelector("#windSpeed").textContent);
 let windchill = "";
 
-if (temp <= 50 && s > 3) {
+if (temp <= 50 && windSpeed > 3) {
   windchill = windChill(temp, windSpeed);
   windchill = `${windchill}&#176;F`;
 } else {
   windchill = "N/A";
 }
-// output
-document.querySelector("#w").innerHTML = windchill;
+
 
 function windChill(temp, windSpeed) {
   windChill = (35.74 + (0.6215 * temp))-(35.75 * Math.pow(windSpeed,0.16)) + (0.4275*temp*Math.pow(windSpeed,0.16));
   return Math.round(windChill);
 }
+// output
+document.querySelector("#w").textContent = windchill;
 
+
+// Spotlight section
+// fetch ('js/data.json')
+// const cards = document.querySelector('.cards');
+
+// fetch('js/data.json')
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (jsonObject) {
+//     console.table(jsonObject);  // temporary checking for valid response and data parsing
+//     const companies = jsonObject['companies'];
+//     companies.forEach(displayCompanies);
+//   });

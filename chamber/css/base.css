@@ -91,7 +91,7 @@ section{
 	padding: 1em;
     /* border-style: solid; */
     min-width: 15em;
-	background-color: rgba(64, 121, 140, .15);
+	/* background-color: rgba(64, 121, 140, .15); */
 }
 
 p{
@@ -303,10 +303,10 @@ form input{
 
 form label.required::after{
     content: " *required";
-    color: red;
+    color: #BA3F1D;
 }
 input:invalid{
-    box-shadow: 0 0 2px 1px red;
+    box-shadow: 0 0 2px 1px #BA3F1D;
 }
 #membership{
 	display: none;
@@ -330,89 +330,79 @@ input:invalid{
 /* Directory */
 .menu {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	/* border: 1px solid #BA3F1D; */
 	padding: 0.5rem;
-	background-color: #bbb;
+	background-color: rgba(64, 121, 140, .75);
 	text-align: center;
 }
+
 .menu button {
 	padding: 1rem;
 }
 
-.directory article{
+main.directory>article,
+main.directory>section {
 	margin: 0.75rem;
-	max-width: 450px;
+	text-align: center;
 }
 
-.comp {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	align-items: center;
+main.directory>section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #ccc;
 }
+
 .list {
 	display: flex;
 	flex-direction: column;
 }
+
 .list section {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	max-width: 100%;
 }
-.comp .card article {
-	flex-direction: column;
-	text-align: center;
+.cards{
+	max-width: 30.5rem;
+	padding: 0;
+}
+.cards>section{
+	margin: 1rem;
+	background-color: rgba(64, 121, 140, .2);
 }
 
-.grid article > * {
-	margin: 0.1rem;
-}
-
-.list article {
+.list section {
 	flex-direction: row;
 	justify-content: left;
+
 }
 
-.list article > * {
-	margin: 0 1rem;
+.list section > * {
+	margin: 1em auto;
 	text-align: left;
 }
 
-.list article img {
+.list section img {
 	display: none; /* smaller viewports only */
 }
 
-article h2 {
+section h3 {
 	font-size: 1.5rem;
 }
 
-.list>section>p:nth-child(4){
-	display: none;
+main.directory>section a {
+	font-size: 0.9rem;
+}
+
+main.directory img {
+	height: 75px;
+	max-width: 100%;
 }
 
 @media (min-width: 700px) {
-	.list article img {
+	.list section img {
 		display: block;
 	}
-}
-
-
-.directory main{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-}
-
-.cards{
-	max-width: 100%;
-}
-
-p section .cards{
-	max-width: 100%;
-}
-
-.list section .portrait{
-	display: none;
-
 }
 
 /* contact page */
