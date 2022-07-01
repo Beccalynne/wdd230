@@ -15,7 +15,7 @@ header {
 	margin: initial;
     align-items: center;
     flex-wrap: wrap;
-	background-color: rgba(186, 63, 29, 1);
+	background-color: #40798C;
 	color: rgb(217, 217, 217) !important;
 }
 /* header alignment*/
@@ -75,7 +75,7 @@ footer{
 	padding: 1em;
 	margin: initial;
 	text-align: center;
-	background-color: rgba(186, 63, 29, 1);
+	background-color:  #40798C;
 }
 footer div>h2, div>p{
 	color: rgb(217, 217, 217);
@@ -200,14 +200,14 @@ nav {margin: 0 2rem;flex: 1 1 25%;position: relative; text-align: right;}
 	position: absolute;
 	top: 45px;
 	right: 0;
-	background-color: #BA3F1D;
+	background-color:  #40798C;
 	box-shadow: 0 0 15px #333;
 }
 .ham{
 	position: absolute;
 	top: 45px;
 	right: 0;
-	background-color: #BA3F1D;
+	background-color:  #40798C;
 }
 
 .responsive a, .responsive a:visited {
