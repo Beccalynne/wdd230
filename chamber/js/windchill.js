@@ -19,7 +19,6 @@ fetch(url)
   console.log(data);
   const temperature = data["main"]["temp"];
   const windSpeed = data["wind"]["speed"];
-  // const speed = data.wind.speed;
   currentTemp.textContent = Math.round(temperature);
   currentWindSpeed.textContent = Math.round(windSpeed);
 
