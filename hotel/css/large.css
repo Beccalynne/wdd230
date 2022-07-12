@@ -1,0 +1,5 @@
+@media screen and (min-width: 47.5rem) {
+    .ham{
+        display: none;
+    }
+}

@@ -88,9 +88,7 @@ h1, h2, h3, h4{
 section{
 	margin: 1em auto;
 	padding: 1em;
-    /* border-style: solid; */
     min-width: 15em;
-	/* background-color: rgba(64, 121, 140, .15); */
 }
 
 p{

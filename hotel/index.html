@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn and Suites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="logo" src="images/logo.webp" alt="Logo" width="128" height="128"></a>
+        <h1>Temple Inn and Suites</h1>
+        <div class="ham">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="temple.html">Temples</a></li>
+                <li><a href="reservations.html">Reserve Now</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook Logo" height="48" width="48"></a></li>
+                <li><a href="https://www.instagram.com/?hl=en"><img src="images/instagram.webp" alt="Instagram Logo" height="48" width="48"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="temple-summary">
+            <img src="images/manti-temple-500px.webp" alt="Manti Temple" width="500" height="333">
+            <h2>Manti Temple</h2>
+            <p>Is located on 4 square acres in Manti Utah. This is the fifth constructed temple for The Church of Latter-day Saints. The original dedication was preformed by Lorenzo Snow in May of 1888. This temple is currently closed for renovaations that started in October 2021.</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <article id="weather">
+                <p>Currently: <span id="current-temp"></span>&#176;F</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+                <p>WindChill: <span id="w"></span></p>
+            </article>
+            <figure>
+                <img src="openweathermap.org" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure>
+            <p>Weather information provided by OpenWeatherMap.org</p>
+    </section>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
