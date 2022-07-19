@@ -1,2 +1,44 @@
 @media screen and (min-width: 30.5rem) {
+    /* Services */
+    main.services{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    main.img{
+        max-width: 500px;
+        max-height: auto;
+    }
+    .reception{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .missionary{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .breakfast{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .shuttle{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .history{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .gym{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .pool{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .room{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
 }

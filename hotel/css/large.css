@@ -1,5 +1,63 @@
 @media screen and (min-width: 47.5rem) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+    }
+    .logo{
+        grid-column: 1/2;
+    }
+    h1{
+        grid-column: 2/3;
+    }
+    nav{
+        grid-column: 3/4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* box-shadow: none; */
+    }
+    .navigation{
+        color: black!important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 2em;
+    }
+    .navigation li {
+        color: black;
+		display: block;
+	}
+    nav li{
+        font-size: 2em;
+    }
+    nav ul li a {
+        text-align: center;
+        padding: 1.25rem;
+        font-size: 1.25rem;
+    }
     .ham{
         display: none;
+    }
+    .temple-summary{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero-image{
+        grid-column: 1/2;
+    }
+    .temple-info{
+        grid-column: 2/3;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wc{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .weather{
+        grid-column: 1/2;
+    }
+    .CTA{
+        grid-column: 2/3;
     }
 }

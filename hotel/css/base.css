@@ -131,7 +131,12 @@ img{
 	max-width: 100%;
 	height: auto;
 }
-
+.hero_image{
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /*Makes the image fit to the box with adjustments, will cut off the image,
+	fill is automatic*/
+}
 .temple-summary>img{
     min-width: 300px;
     height: auto;
@@ -164,4 +169,112 @@ img{
 	grid-row: 3/4;
 	text-align: center;
 	margin: .5rem;
+}
+.CTA{
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-box img {
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgb(189,187,176, .8);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+	padding: 1em;
+}
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: white;
+    font-size: 1.2em;
+}
+footer{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 3fr 1fr;
+}
+footer a{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+.contact{
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+footer p{
+	grid-column: 1/3;
+	grid-row: 2/3;
+}
+
+/* Reservations */
+main.reservations{
+    max-width: 320px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+form label,
+form input{
+    display: block;
+    width: 100%;
+	padding: .5em;
+}
+label input{
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+form input{
+    margin-bottom: 1em;
+    padding: .75rem;
+}
+
+form label.required::after{
+    content: " *required";
+    color: #BA3F1D;
+}
+input:invalid{
+    box-shadow: 0 0 2px 1px #BA3F1D;
+}
+
+/* Services */
+main.services>section{
+	background-color: #bdbbb0;
+	margin: 1rem;
+}
+.services h2{
+	padding: 1rem;
+}
+
+/* Reception */
+main.reception{
+	background-color: #353535;
+}
+main .cupcake{
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+
+}
+main .cupcake img{
+	padding: 1em;
+	background-color: white;
+}
+main .reception-info{
+	padding: 1em;
+	background-color: white;
+	text-align: center;
+	margin: 50px;
 }
